@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-import { getCommentsData } from "../../data/comments";
+import { getCommentsData } from "./comments";
 import Comment from "./Comment";
-import CommentForm from "./CommentForm";
+import CommentForm from "./CommentsForm";
 
 const CommentsContainer = ({ className, logginedUserId }) => {
   const [comments, setComments] = useState([]);
