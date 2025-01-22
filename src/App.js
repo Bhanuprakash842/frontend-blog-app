@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
+import {Toaster} from 'react-hot-toast'
 
 import "./App.css";
 import ArticleDetailPage from "./pages/articleDetail/ArticleDetailPage";
-import HomePage from "./pages/home/Homepage";
-import RegisterPage from "./pages/home/register/RegisterPage";
+import HomePage from "./pages/home/HomePage";
+import RegisterPage from "./pages/register/RegisterPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/blog/:id" element={<ArticleDetailPage />} />
         <Route path="/register" element={<RegisterPage />} />
       </Routes>
+      <Toaster />
     </div>
   );
 }
