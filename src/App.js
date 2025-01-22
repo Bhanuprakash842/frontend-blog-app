@@ -3,8 +3,8 @@ import {Toaster} from 'react-hot-toast'
 
 import "./App.css";
 import ArticleDetailPage from "./pages/articleDetail/ArticleDetailPage";
-import HomePage from "./pages/home/HomePage";
-import RegisterPage from "./pages/register/RegisterPage";
+import HomePage from "./pages/home/Homepage";
+import RegisterPage from "./pages/home/register/RegisterPage";
 
 function App() {
   return (

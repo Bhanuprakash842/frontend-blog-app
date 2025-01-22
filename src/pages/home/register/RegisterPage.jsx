@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";
 import toast from 'react-hot-toast'
 
-import MainLayout from "../../components/MainLayout";
-import { signup } from "../../services/index/users";
+import MainLayout from "../../../components/MainLayout";
+import { signup } from "../../../services/users";
 
 const RegisterPage = () => {
   const { mutate, isLoading } = useMutation({
