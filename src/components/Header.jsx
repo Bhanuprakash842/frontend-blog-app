@@ -3,7 +3,6 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useSelector, useDispatch } from "react-redux";
 
-import { images } from "../constants";
 import { logout } from "../store/actions/user";
 
 const navItemsInfo = [
@@ -86,7 +85,7 @@ const Header = () => {
     <section className="sticky top-0 left-0 right-0 z-50 bg-white">
       <header className="container mx-auto px-5 flex justify-between py-4 items-center">
         <div>
-          <img className="w-16" src={images.Logo} alt="logo" />
+          <h3 className="text-3xl font-sans font-bold text-dark-soft">DevDiary</h3>
         </div>
         <div className="lg:hidden z-50">
           {navIsVisible ? (
